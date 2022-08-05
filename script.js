@@ -109,7 +109,7 @@ function play(choice) {
             scissorsButton.classList.remove("win");
             winText.remove()
           }, 2000)
-          if (game.userScore === bestOf - 1) {
+          if (game.userScore === bestOf) {
             finalScreen("win");
           }
           break;
@@ -122,7 +122,7 @@ function play(choice) {
             scissorsButton.classList.remove("lose");
             loseText.remove()
           }, 2000)
-          if (game.compScore === bestOf - 1) {
+          if (game.compScore === bestOf) {
             finalScreen("lose");
           }
           break;
