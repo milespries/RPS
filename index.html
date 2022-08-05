@@ -3,10 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>R.P.S.</title>
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <script src="script.js"></script>
+<body class="disable-scroll">
+    <img alt="YOU WON!" id="win-screen" class="is-hidden" onClick="window.location.reload();" src="https://t3.ftcdn.net/jpg/03/03/52/48/360_F_303524879_h1oC0wOJsh8uqo0aZf89lNJg7njTa5A8.jpg">
+    <img alt="you lost :(" id="lose-screen" class="is-hidden" onClick="window.location.reload();" src="https://koenig-media.raywenderlich.com/uploads/2015/04/ZombieConga-YouLose.png">
+    <div class="container">
+        <div class="mid">
+            <div class="row">
+                <div class="col-4 is-center">
+                    <div class="text-center" id="rock">
+                        <button class="button outline big" id="rock-button" onClick="play('rock');">🪨</a>
+                    </div>
+                </div>
+                <div class="col-4 is-center">
+                    <div class="text-center" id="paper">
+                        <button class="button outline big" id="paper-button" onClick="play('paper');">📄</a>
+                    </div>
+                </div>
+                <div class="col-4 is-center">
+                    <div class="text-center" id="scissors">
+                        <button class="button outline big" id="scissors-button" onClick="play('scissors');">✂️</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-4">
+                <table class="text-center">
+                    <thead>
+                        <tr>
+                            <th>You</th>
+                            <th>BOT</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="user-score">0</td>
+                            <td id="comp-score">0</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col"></div>
+        </div>
+        <div class="row is-center hide-xs">
+            <div class="col-4 text-center mid card">
+                <h1>First to <u>5</u> <b>Wins!</b></h1>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js" defer></script>
 </body>
 </html>

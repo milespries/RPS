@@ -1,0 +1,42 @@
+.disable-scroll{
+    overflow: hidden;
+  }
+
+.mid {
+    margin: 10vh auto;
+}
+
+.big {
+    font-size: 12vh;
+    padding: 3vh;
+}
+
+button:disabled.win {
+    opacity: 1;
+}
+
+button:disabled.lose {
+    opacity: 1;
+}
+
+.win {
+    box-shadow: 0px 0px 5vh 1vh rgb(0, 255, 0);
+    /* in order: x offset, y offset, blur size, spread size, color */
+}
+
+#win-screen {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+#lose-screen {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+}
+
+.lose {
+    box-shadow: 0px 0px 5vh 1vh rgb(255, 0, 0);
+    /* in order: x offset, y offset, blur size, spread size, color */
+}
