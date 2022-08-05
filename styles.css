@@ -6,6 +6,12 @@
     margin: 10vh auto;
 }
 
+@media only screen and (max-width: 600px) {
+    .mid {
+        margin: 3vh auto;
+    }
+  }
+
 .big {
     font-size: 12vh;
     padding: 3vh;
