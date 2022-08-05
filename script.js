@@ -18,7 +18,7 @@ const winText = document.createElement("h2");
 winText.classList.add("text-success");
 winText.textContent = "easy win";
 const loseText = document.createElement("h2");
-winText.classList.add("text-error");
+loseText.classList.add("text-error");
 loseText.textContent = "tough loss";
 const tieText = document.createElement("h2");
 tieText.textContent = "wow a tie!";
@@ -37,7 +37,7 @@ function play(choice) {
             rockButton.classList.remove("win");
             winText.remove()
           }, 2000)
-          if (game.userScore === bestOf - 1) {
+          if (game.userScore === bestOf) {
             finalScreen("win");
           }
           break;
@@ -50,7 +50,7 @@ function play(choice) {
             rockButton.classList.remove("lose");
             loseText.remove()
           }, 2000)
-          if (game.compScore === bestOf - 1) {
+          if (game.compScore === bestOf) {
             finalScreen("lose");
           }
           break;
@@ -73,7 +73,7 @@ function play(choice) {
             paperButton.classList.remove("win");
             winText.remove()
           }, 2000)
-          if (game.userScore === bestOf - 1) {
+          if (game.userScore === bestOf) {
             finalScreen("win");
           }
           break;
@@ -86,7 +86,7 @@ function play(choice) {
             paperButton.classList.remove("lose");
             loseText.remove()
           }, 2000)
-          if (game.compScore === bestOf - 1) {
+          if (game.compScore === bestOf) {
             finalScreen("lose");
           }
           break;
